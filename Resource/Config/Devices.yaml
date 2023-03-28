@@ -1,0 +1,19 @@
+DEVICES_CONFIG:
+  PLATFORM:
+    DESKTOP:
+        WIDTH: 1920
+        HEIGHT: 1080
+        DESCRIPTION: "full-hd desktop"
+    MOBILE:
+        WIDTH: 390
+        HEIGHT: 884
+        DESCRIPTION: "iPhone 12 Pro"
+    TABLET:
+        WIDTH: 820
+        HEIGHT: 1180
+        DESCRIPTION: "iPAD Air"
+    API:
+        WIDTH: 1920
+        HEIGHT: 1080
+        DESCRIPTION: "full-hd desktop if ever needed"
+

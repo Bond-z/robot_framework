@@ -1,0 +1,81 @@
+{
+	"attachments": [
+		{
+			"color": "<status_color>",
+			"blocks": [
+				{
+					"type": "section",
+					"text": {
+						"type": "mrkdwn",
+						"text": "*Triger From:* <trigger_from>"
+					}
+				},
+				{
+					"type": "section",
+					"text": {
+						"type": "mrkdwn",
+						"text": "*:piggy: Pigspin Test result:*"
+					}
+				},
+				{
+					"type": "context",
+					"elements": [
+						{
+							"type": "mrkdwn",
+							"text": ":white_check_mark: Passed = <pass_num>"
+						},
+						{
+							"type": "plain_text",
+							"text": ":x: Failed = <fail_num>",
+							"emoji": true
+						},
+						{
+							"type": "plain_text",
+							"text": ":warning: Skip = <skip_num>",
+							"emoji": true
+						}
+					]
+				},
+				{
+					"type": "section",
+					"fields": [
+						{
+							"type": "mrkdwn",
+							"text": "*Description:* \n<deploy_description>"
+						},
+						{
+							"type": "mrkdwn",
+							"text": "*Report:* \n<<report_link>|Click here to see the report>"
+						}
+					]
+				},
+				{
+					"type": "section",
+					"fields": [
+						{
+							"type": "mrkdwn",
+							"text": "*Branch:* \n<branch>"
+						},
+						{
+							"type": "mrkdwn",
+							"text": "*Target environment:* \n<environment>"
+						}
+					]
+				},
+				{
+					"type": "section",
+					"fields": [
+						{
+							"type": "mrkdwn",
+							"text": "*Test duration:* \n<test_duration>"
+						},
+						{
+							"type": "mrkdwn",
+							"text": "*Pipeline link:* \n<<deploy_link>|Click here to see deployment result>"
+						}
+					]
+				}
+			]
+		}
+	]
+}

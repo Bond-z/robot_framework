@@ -1,0 +1,24 @@
+  TIMEOUT:
+      LOCAL:
+          ATTEMP: 2X
+          GLOBAL: 1 min
+          BROWSER: 0:00:10
+          RETRY: 0.5 sec
+          SLEEP: 1 sec
+          RETRY_INTERVAL: 30 sec
+      STAGING:
+          ATTEMP: 2X
+          GLOBAL: 1 min
+          BROWSER: 0:00:10
+          RETRY: 30sec
+          SLEEP: 3 sec
+          RETRY_INTERVAL: 1sec
+      PRODUCTION:
+          ATTEMP: 2X
+          GLOBAL: 1 min
+          BROWSER: 0:00:10
+          RETRY: 0.5 sec
+          SLEEP: 3 sec
+          RETRY_INTERVAL: 30 sec
+
+

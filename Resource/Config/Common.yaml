@@ -1,0 +1,14 @@
+CL_COMMON_CONFIG:
+    LIMIT_DISPLAY:
+        LOBBY:
+            BANNER: 9
+            PROMOTION: 5
+            RECENT_GAME: 3
+            FAVORITE_GAME: 6
+            NEW_GAME: 3
+            POPULAR_GAME: 6
+            RTP_WIN_BONUS: 10
+            RTP_ALMOST_WIN: 10
+        QUEST:
+            
+

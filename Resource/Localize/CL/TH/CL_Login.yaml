@@ -1,0 +1,24 @@
+cl_login_localize:
+  phone_page:
+    input_phone:
+      title: หมายเลขโทรศัพท์
+      wrong_format: กรุณากรอกเบอร์มือถือให้ถูกต้อง เช่น 0100000000
+    modal:
+      ban_header: เบอร์โทรศัพท์มือถือผิดปกติ
+      ban_subheader: กรุณาติดต่อเจ้าหน้าที่เพื่อรับความช่วยเหลือ
+      lock_header: PIN ของท่านถูกล็อค
+      lock_subheader: กรุณายืนยันตัวตนเพื่อปลดล็อค
+      invalid_pin: รหัส PIN ไม่ถูกต้อง
+  pin_page:
+    input_pin:
+      wrong_pin: รหัส PIN ไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง 
+      wrong_format: กรุณากรอกเป็นตัวเลขเท่านั้น
+      lock_pin_header: PIN ของท่านถูกล็อค
+      lock_pin_subheader: กรุณายืนยันตัวตนเพื่อปลดล็อค
+  otp_page:
+    header: ยืนยันตัวตน
+    sub_header: ยืนยันรหัส OTP
+
+
+
+        

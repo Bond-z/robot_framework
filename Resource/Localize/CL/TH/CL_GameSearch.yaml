@@ -1,0 +1,11 @@
+cl_gamesearch_localize:
+  all_game:
+    header:
+      all: เกมทั้งหมด
+      recent: เล่นอีกครั้ง
+      favorite: เกมโปรด
+      new: เกมมาใหม่ทั้งหมด
+      popular: เกมยอดนิยมทั้งหมด
+
+
+    

@@ -1,0 +1,30 @@
+casino_lobby_localize:
+  lobby:
+    banner:
+    menu:
+      all_game: เกมทั้งหมด
+      quest: ภารกิจ
+      champion: แชมป์เปี้ยน
+      item_shop: แลกรางวัล
+    promotion:
+      header: โปรโมชั่น
+    recent_game:
+      header: เล่นอีกครั้ง
+    favorite_game:
+      header: เกมโปรด
+    new_game:
+      header: เกมมาใหม่
+    popular_game:
+      header: เกมยอดนิยม
+    baccarat:
+      header: บาคาร่า
+    rulet: 
+      header: รูเล็ต
+    blackjack: 
+      header: แบล็คแจ็ค
+    dragon_tiger: 
+      header: Dragon Tiger
+    game_show: 
+      header: เกมส์โชว์
+    
+    

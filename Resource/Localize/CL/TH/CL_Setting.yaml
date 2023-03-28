@@ -1,0 +1,4 @@
+cl_setting_localize:
+  reset_pin:
+    input_new_pin_title_modal: "กรอกรหัส PIN ใหม่ของคุณ"
+    confirm_new_pin_title_modal: "ยืนยันรหัส PIN อีกครั้ง"

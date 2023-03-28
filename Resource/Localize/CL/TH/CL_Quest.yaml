@@ -1,0 +1,23 @@
+cl_quest_localize:
+  quest_page:
+    gamequest_refresh:
+      time_stamp: "อัพเดทสถานะหลังทำภารกิจประมาณ 10 นาที"
+    game_quest_card:
+      finish_progress:  "สำเร็จ"
+      unfinish_progress:  "ยังไม่สำเร็จ"
+      ticket_amount: "รางวัล <amount> Tickets"
+    timer:
+      title:  "ภารกิจ"
+      subtitle:  "ภารกิจรายวันจะถูกรีเซทในอีก"
+      countdown: "\\d{1,2} ชั่วโมง \\d{2} นาที"
+      hint: "ภารกิจรายวันจะรีเซตใหม่ทุกๆ \\d{1,2}\\.\\d{2}\\s(A|P)\\.M\\sของทุกวัน"
+    mainquest:
+      finish_progress:  "สำเร็จ"
+      unfinish_progress:  "<current_finish>/<all_quest>"
+    champion:
+      header:  "ภารกิจแชมป์เปี้ยน"
+      claim_btn:
+        not_upload:  "อัพโหลดรูปภาพ"
+        uploaded:  "รับ <bigwin_ticket_amount> Tickets"
+    weeklyquest:
+      ticket_amount: "รางวัล <amount> Tickets"

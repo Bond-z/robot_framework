@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20230309 16:40:51.770" generator="Robot 3.2.2 (Python 2.7.10 on darwin)">
+<suite source="/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/TestCase/CL/API/API_Wallet.robot" id="s1" name="API Wallet">
+<test id="s1-t1" name="WAL-009 Verify when bet with only cash wallet should deduct amount of money on wallet correctly">
+<kw type="setup" name="Set Up Common Keyword For User Wallet">
+<kw name="CL Setup Test User" library="CL_Common">
+<arguments>
+<arg>${user_type}</arg>
+<arg>${common_type}</arg>
+</arguments>
+<kw name="If" library="Reserved">
+<arguments>
+<arg>'${user_type}'=='common'</arg>
+</arguments>
+<msg timestamp="20230309 16:40:54.077" level="FAIL">'If' is a reserved keyword.</msg>
+<status status="FAIL" endtime="20230309 16:40:54.077" starttime="20230309 16:40:54.076"></status>
+</kw>
+<status status="FAIL" endtime="20230309 16:40:54.078" starttime="20230309 16:40:54.074"></status>
+</kw>
+<status status="FAIL" endtime="20230309 16:40:54.078" starttime="20230309 16:40:54.072"></status>
+</kw>
+<kw type="teardown" name="WEB Teardown common keyword" library="WEB_Common">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>WEB Capture screen when case fail</arg>
+</arguments>
+<kw name="WEB Capture screen when case fail" library="WEB_Common">
+<doc>Allow QA to manully take screenshot and locate them to specific directory from config.json
+This allow us to check the screenshot saperate from the auto scrrenshot of the Robotframework
+Need first 8 letter of the test cases anme to be Test ID in format TC_00001</doc>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${TEST_NAME}</arg>
+</arguments>
+<assign>
+<var>${test_name}</var>
+</assign>
+<msg timestamp="20230309 16:40:54.085" level="INFO">${test_name} = [u'WAL-009', u'Verify', u'when', u'bet', u'with', u'only', u'cash', u'wallet', u'should', u'deduct', u'amount', u'of', u'money', u'on', u'wallet', u'correctly']</msg>
+<status status="PASS" endtime="20230309 16:40:54.085" starttime="20230309 16:40:54.084"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${ar_ENVIRONMENT}-${ar_PRODUCT}-${SUITE METADATA}[name]-${test_name}[0]-fail.png</arg>
+</arguments>
+<msg timestamp="20230309 16:40:54.103" level="FAIL">Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</msg>
+<status status="FAIL" endtime="20230309 16:40:54.103" starttime="20230309 16:40:54.087"></status>
+</kw>
+<status status="FAIL" endtime="20230309 16:40:54.103" starttime="20230309 16:40:54.082"></status>
+</kw>
+<status status="FAIL" endtime="20230309 16:40:54.103" starttime="20230309 16:40:54.081"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20230309 16:40:54.105" starttime="20230309 16:40:54.104"></status>
+</kw>
+<status status="FAIL" endtime="20230309 16:40:54.105" starttime="20230309 16:40:54.080">Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</status>
+</kw>
+<doc>User has 2 wallets
+After bet, the money will be deducted from cash wallet only
+Bet = 10 Baht</doc>
+<tags>
+<tag>active</tag>
+<tag>API</tag>
+<tag>WAL-9</tag>
+<tag>wallet1</tag>
+</tags>
+<status status="FAIL" endtime="20230309 16:40:54.105" critical="yes" starttime="20230309 16:40:54.069">Setup failed:
+'If' is a reserved keyword.
+
+Also teardown failed:
+Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</status>
+</test>
+<metadata>
+<item name="name">Wallet API</item>
+</metadata>
+<status status="FAIL" endtime="20230309 16:40:54.108" starttime="20230309 16:40:51.784"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">active</stat>
+<stat fail="1" pass="0">API</stat>
+<stat fail="1" pass="0">WAL-9</stat>
+<stat fail="1" pass="0">wallet1</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="API Wallet" pass="0">API Wallet</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230309 16:40:52.665" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/import.robot' on line 16: Replacing variables from setting 'Resource' failed: Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</msg>
+<msg timestamp="20230309 16:40:52.666" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/import.robot' on line 17: Replacing variables from setting 'Resource' failed: Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</msg>
+<msg timestamp="20230309 16:40:52.668" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/import.robot' on line 18: Replacing variables from setting 'Resource' failed: Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</msg>
+<msg timestamp="20230309 16:40:52.669" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/import.robot' on line 19: Replacing variables from setting 'Resource' failed: Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</msg>
+<msg timestamp="20230309 16:40:53.299" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Keywords/CL/CL_Common.robot' on line 12: Replacing variables from setting 'Variables' failed: Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</msg>
+<msg timestamp="20230309 16:40:53.871" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Keywords/CASINO/Casino_Common_Keyword.robot' on line 2: Resource file '../../Global/WEB_Common.robot' does not exist.</msg>
+<msg timestamp="20230309 16:40:53.873" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Keywords/CASINO/Casino_Common_Keyword.robot' on line 3: Resource file '../../Global/GEN_Common.robot' does not exist.</msg>
+<msg timestamp="20230309 16:40:53.875" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Keywords/CASINO/Casino_Common_Keyword.robot' on line 4: Resource file '../../Global/DB_Common.robot' does not exist.</msg>
+<msg timestamp="20230309 16:40:53.876" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Keywords/CASINO/Casino_Common_Keyword.robot' on line 5: Resource file '../../Global/API_Common.robot' does not exist.</msg>
+<msg timestamp="20230309 16:40:53.878" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Keywords/CASINO/Casino_Common_Keyword.robot' on line 6: Resource file 'CL_LandingPage.robot' does not exist.</msg>
+<msg timestamp="20230309 16:40:53.891" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Keywords/CASINO/Casino_Common_Keyword.robot' on line 12: Replacing variables from setting 'Variables' failed: Variable '${ar_ENVIRONMENT}' not found. Did you mean:
+    ${ENVIRONMENT}</msg>
+<msg timestamp="20230309 16:40:53.893" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Keywords/CASINO/Casino_Common_Keyword.robot' on line 13: Resource file 'CL_Login.robot' does not exist.</msg>
+<msg timestamp="20230309 16:40:54.007" level="WARN">Imported resource file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/Locators/CASINO/Casino_GameSearch.robot' is empty.</msg>
+<msg timestamp="20230309 16:40:54.017" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/import.robot' on line 62: Setting variable '${bonus_token}' failed: Environment variable '%{BONUS_WALLET_TOKEN}' not found.</msg>
+<msg timestamp="20230309 16:40:54.046" level="ERROR">Error in file '/Volumes/Macintosh HD/BluePi Disk/pigspin-automate/Resource/import.robot' on line 61: Setting variable '${secret_key}' failed: Environment variable '%{WALLET_SECRET_KEY}' not found.</msg>
+</errors>
+</robot>

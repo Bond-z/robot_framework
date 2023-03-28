@@ -1,0 +1,182 @@
+    ENVIRONMENT:
+        DOMAIN:
+            STAGING:
+                ARES:
+                    URL: https://staging.pigspin.xyz/
+                PIGSPIN_BO:
+                    URL: https://bofe-staging.pigspin.xyz/
+                PIGSPIN_BO_SERVICE:
+                    URL: https://bofe-staging.pigspin.xyz/api/
+                PIGSPIN_API:
+                    URL: https://staging.pigspin.xyz/api/
+                PIGSPIN_SERVICE:
+                    URL: https://staging.pigspin.xyz/api/
+                PIGBET: 
+                    URL: https://staging.pigbet.xyz/  
+            STAGING_CHIMERA:
+                ARES:
+                    URL: https://dev-chimera.pigspin.xyz/
+                PIGSPIN_BO:
+                    URL: https://bofe-staging.pigspin.xyz/
+                PIGSPIN_API:
+                    URL: https://dev-chimera.pigspin.xyz/api/
+                PIGSPIN_SERVICE:
+                    URL: https://dev-chimera.pigspin.xyz/api/            
+            STAGING_SEAL:
+                ARES:
+                    URL: https://dev-seal.pigspin.xyz/
+                PIGSPIN_BO:
+                    URL: https://bofe-staging.pigspin.xyz/
+                PIGSPIN_API:
+                    URL: https://dev-seal.pigspin.xyz/api/
+                PIGSPIN_SERVICE:
+                    URL: https://dev-seal.pigspin.xyz/api/        
+            STAGING_KRAKEN:
+                ARES:
+                    URL: https://dev-kraken.pigspin.xyz/
+                PIGSPIN_BO:
+                    URL: https://bofe-staging.pigspin.xyz/
+                PIGSPIN_API:
+                    URL: https://dev-kraken.pigspin.xyz/api/
+                PIGSPIN_SERVICE:
+                    URL: https://dev-kraken.pigspin.xyz/api/        
+            PRODUCTION:
+                ARES:
+                    URL: https://pigspin.com/
+                PIGSPIN_BO:
+                    URL: https://kiosk.pigspin.com/
+                PIGSPIN_API:
+                    URL: https://pigspin.com/api/
+                PIGSPIN_SERVICE:
+                    URL: https://api.pigspin.com/api/
+                PIGSPIN_ARTICLE:  
+                    URL: https://pigspin.com/blog/
+        DATABASE:
+            POSTGRESQL:
+                ENV:
+                    STAGING:
+                        SERVICES:
+                            USER:
+                                IP: 35.240.144.176
+                                PORT: 5432
+                                DB_NAME: staging_pigspin_user
+                                USER: pigspin_user
+                                PASSWORD: blueP!888
+                            WALLET:
+                                IP: 35.240.144.176
+                                PORT: 5432
+                                DB_NAME: staging_pigspin_wallet
+                                USER: pigspin_wallet
+                                PASSWORD: blueP!888
+                            GAME:
+                                IP: 35.240.144.176
+                                PORT: 5432
+                                DB_NAME: staging_pigspin_game
+                                USER: pigspin_game
+                                PASSWORD: blueP!888
+                            PROMOTION:
+                                IP: 35.240.144.176
+                                PORT: 5432
+                                DB_NAME: staging_pigspin_promotion
+                                USER: pigspin_promotion
+                                PASSWORD: blueP!888
+                            CAMPAIGN:
+                                IP: 35.240.144.176
+                                PORT: 5432
+                                DB_NAME: staging_pigspin_campaign
+                                USER: pigspin_campaign
+                                PASSWORD: blueP!888
+                            LOYALTY:
+                                IP: 35.240.144.176
+                                PORT: 5432
+                                DB_NAME: staging_pigspin_loyalty
+                                USER: pigspin_loyalty
+                                PASSWORD: blueP!888
+                            BACKOFFICE:
+                                IP: 35.240.144.176
+                                PORT: 5432
+                                DB_NAME: staging_core_backoffice
+                                USER: core_backoffice
+                                PASSWORD: blueP!888
+                            AFFILIATE:
+                                IP: 35.240.144.176
+                                PORT: 5432
+                                DB_NAME: staging_pigspin_affiliate
+                                USER: pigspin_affiliate
+                                PASSWORD: blueP!888
+                    PRODUCTION:
+                        SERVICES:
+                            USER:
+                                IP: 34.142.204.53
+                                PORT: 5432
+                                DB_NAME: pigspin_user
+                                USER: reader
+                                PASSWORD: z9z7GQ8qhRJZWyRQ
+                            WALLET:
+                                IP: 34.142.204.53
+                                PORT: 5432
+                                DB_NAME: pigspin_wallet
+                                USER: reader
+                                PASSWORD: z9z7GQ8qhRJZWyRQ
+                            GAME:
+                                IP: 34.142.204.53
+                                PORT: 5432
+                                DB_NAME: pigspin_game
+                                USER: reader
+                                PASSWORD: z9z7GQ8qhRJZWyRQ
+                            PROMOTION:
+                                IP: 34.142.204.53
+                                PORT: 5432
+                                DB_NAME: pigspin_promotion
+                                USER: reader
+                                PASSWORD: z9z7GQ8qhRJZWyRQ
+                            CAMPAIGN:
+                                IP: 34.142.204.53
+                                PORT: 5432
+                                DB_NAME: pigspin_campaign
+                                USER: reader
+                                PASSWORD: z9z7GQ8qhRJZWyRQ
+                            LOYALTY:
+                                IP: 34.142.204.53
+                                PORT: 5432
+                                DB_NAME: pigspin_loyalty
+                                USER: reader
+                                PASSWORD: z9z7GQ8qhRJZWyRQ
+                            BACKOFFICE:
+                                IP: 34.142.204.53
+                                PORT: 5432
+                                DB_NAME: core_backoffice
+                                USER: reader
+                                PASSWORD: z9z7GQ8qhRJZWyRQ
+            MYSQL:
+                STAGING:
+                    SERVICES:
+                        PHP:
+                            IP: 34.87.119.13
+                            PORT: 3306
+                            DB_NAME: staging_pigspin_admin
+                            USER: pigspin_admin
+                            PASSWORD: blueP!888
+            RADIS:
+                STAGING:
+                    IP: 34.87.87.55
+                    PORT: 6379
+                    PASSWORD: mq2Zy6xStcFv069D
+                PRODUCTION:
+                    IP: xxx
+                    PORT: xxx
+                    PASSWORD: xxxx
+        PAGE:
+            LOGIN: "login"
+            LOBBY: "lobby"
+            REFERAL: "referral"
+            PROMOTION: "promotions"
+            ALL_GAMES: "games/search"
+            QUEST: "daily-quests"
+            SHOP: "pig-shop"
+            WALLET: "wallet"
+            CONTACT_US: "contactus"
+            FAQ: "faq"
+            PROFILE: "profile"
+            LOGOUT: "logout"
+            CHAMPION: "daily-quests/champion"
